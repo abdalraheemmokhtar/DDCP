@@ -23,6 +23,6 @@ async def shutdown():
     await database.disconnect()
 @app.get("/")
 async def fetch_data():
-    query = "SELECT * FROM core_post;"
+    query = "SELECT * FROM Fast;"
     results = await database.fetch_all(query)
     return {"data": results}
