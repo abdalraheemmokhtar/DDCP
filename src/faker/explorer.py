@@ -8,12 +8,12 @@ country="DE",
 description="Myopic machete man"),
 ]
 
-def get_all() -> list[_explorers]:
+def get_all() -> list[Explorer]:
     return _explorers
 
 def get_one(name:str) -> Explorer | None:
-    for _explorer in _explorers
-        if _explorer.name = name:
+    for _explorer in _explorers:
+        if _explorer.name == name:
             return _explorer
         return None
 
